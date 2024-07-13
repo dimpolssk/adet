@@ -1,0 +1,138 @@
+/* PARALLAX.CSS */
+/*CSS created by Christopher Jay De Claro*/
+/*github.com/cjdeclaro*/
+
+/* Key Art default settings */
+.keyart,
+.keyart_layer {
+    height: 1000px;
+}
+
+.keyart {
+    position: relative;
+    z-index: 10;
+}
+
+.keyart_layer {
+    background-position: bottom center;
+    background-size: auto 1038px;
+    background-repeat: repeat-x;
+    width: 100%;
+    position: absolute;
+}
+
+.keyart_layer.parallax {
+    position: fixed;
+}
+
+.main-content {
+    width: 100%;
+    position: absolute;
+    z-index: 200;
+}
+
+.profile-background {
+    height: 700px;
+    transform: scale(0.7);
+    background-size: cover;
+    background-position: center;
+    /* Add background image or color as needed */
+}
+
+.profile-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 45px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    color: white;
+	text-align: justify; 
+}
+
+.profile-container h1 {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.profile-container p {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em; 
+    line-height: 1.9;
+}
+
+.profile-container strong {
+    color: yellow;
+}
+.keyart,
+.keyart_layer {
+	height: 1000px;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+.main-content {
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+}
+
+#keyart-scrim {
+    opacity: 0;
+}
+
+/*ADD OR REMOVE LAYERS AS NEEDED*/
+
+#keyart-0 {
+	background-image: url(img/parallax0.png);
+}
+
+#keyart-1 {
+	background-image: url(https://private-user-images.githubusercontent.com/139842899/348455974-0d743b32-c612-4761-902a-24211719220f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4NTUwMDEsIm5iZiI6MTcyMDg1NDcwMSwicGF0aCI6Ii8xMzk4NDI4OTkvMzQ4NDU1OTc0LTBkNzQzYjMyLWM2MTItNDc2MS05MDJhLTI0MjExNzE5MjIwZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxM1QwNzExNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xMzNkYjhmYWUzMzBlZGE2ODhjMjgyM2EwOGNkODZkNTEyMzc5Y2U1OWUzMTdmNGU3MTA1OGZmZTczNmVjZmNiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.39C-87Yal82Awuu5BpR16z1EbUIo78Zcs-8YGg01xfk);
+}
+
+#keyart-2 {
+	background-image: url(https://private-user-images.githubusercontent.com/139842899/348455969-7014d7cd-716a-455a-9f64-d9acf71fd2e3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4NTUwMDEsIm5iZiI6MTcyMDg1NDcwMSwicGF0aCI6Ii8xMzk4NDI4OTkvMzQ4NDU1OTY5LTcwMTRkN2NkLTcxNmEtNDU1YS05ZjY0LWQ5YWNmNzFmZDJlMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxM1QwNzExNDFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMGNhM2QzOWQ5Mzk5YjI4MzAzNjkxOTVlNzc2ZTJjNTA5YTQ5ZTZkOWMzZWJhNTUzYmU0ZGM0ZTk5YTliNjk0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.IZnLINXM83T263T8JcRFGqTl4AcVU_kk709-B5faEls);
+}
+
+#keyart-3 {
+	background-image: url(https://private-user-images.githubusercontent.com/139842899/348457155-a65cbff0-ac6c-4173-b1b7-997f2e35297d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4NTY0MTEsIm5iZiI6MTcyMDg1NjExMSwicGF0aCI6Ii8xMzk4NDI4OTkvMzQ4NDU3MTU1LWE2NWNiZmYwLWFjNmMtNDE3My1iMWI3LTk5N2YyZTM1Mjk3ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxM1QwNzM1MTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jMTI0NzI4MjAxYmViZDUzZTJiZTI4OWY5MjI0NzgwMTUzNmMwM2MzODk3YjAzZDRiOTkxMjgwODg1ZGViYmYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.LtQHR37uey1NdZSeKs-07QSmdgp3fNlcZfruiSmRGAU);
+}
+
+#keyart-4 {
+	background-image: url(https://private-user-images.githubusercontent.com/139842899/348455582-855c815d-3de3-4abc-87cb-efb6839bba7f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4NTQ1MTgsIm5iZiI6MTcyMDg1NDIxOCwicGF0aCI6Ii8xMzk4NDI4OTkvMzQ4NDU1NTgyLTg1NWM4MTVkLTNkZTMtNGFiYy04N2NiLWVmYjY4MzliYmE3Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxM1QwNzAzMzhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZTIxNGVkNTgxNWJmNzQ1YmU3N2Q2OTcyYmQzNmVjNjQ2NmZiZGU5Yzg4MDVmZDQ1MjNkNGI1MzMxOWMwYWNmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Z6Gj4WKwFTtdK3jLDrvTsHjuIMCXTFnUVaMhKZHYfA0);
+}
+
+#keyart-5 {
+	background-image: url(https://private-user-images.githubusercontent.com/139842899/348460284-c8c931ca-2332-4e0d-aeb6-3b729347dc1d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4NjAxMjQsIm5iZiI6MTcyMDg1OTgyNCwicGF0aCI6Ii8xMzk4NDI4OTkvMzQ4NDYwMjg0LWM4YzkzMWNhLTIzMzItNGUwZC1hZWI2LTNiNzI5MzQ3ZGMxZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxM1QwODM3MDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNzZhMTc1NTJjZGZjMGY1M2M2MjA2ZWU1YjBmYmVjMDczMTdiOTUxYzAxNWM0ODc2MzY3YzA4YjNhNzY5ZWZjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.3Eefw_DBU5CvviYQLagDGE22xCna_QHfGIXS15F7OfY);
+}
+
+#keyart-6 {
+	background-image: url(https://private-user-images.githubusercontent.com/139842899/348459300-8c3c9239-31d1-4807-9e11-f903b7642b9b.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4NTg5NzYsIm5iZiI6MTcyMDg1ODY3NiwicGF0aCI6Ii8xMzk4NDI4OTkvMzQ4NDU5MzAwLThjM2M5MjM5LTMxZDEtNDgwNy05ZTExLWY5MDNiNzY0MmI5Yi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxM1QwODE3NTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYzNiY2Y4MDViYTIxNmY5OWQyMGRlMmQyNWRjMzc5MjY5MGI1MzBkMTcyZmRkNzAzMjFkZDBjZTVhMWViNTRlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Gnu2FDxkQxSjXoyVYM3dMo-y61fpHU0wLAKV6Nvo5FU);
+}
+
+#keyart-7 {
+	background-image: url(https://private-user-images.githubusercontent.com/139842899/348459187-cb2b53cd-a319-446a-ba16-d2c6f47fdd5d.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4NTg4MjIsIm5iZiI6MTcyMDg1ODUyMiwicGF0aCI6Ii8xMzk4NDI4OTkvMzQ4NDU5MTg3LWNiMmI1M2NkLWEzMTktNDQ2YS1iYTE2LWQyYzZmNDdmZGQ1ZC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxM1QwODE1MjJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yODlkZDYxM2FkZDIwN2JlMmMxNzMzYzQyMGJhZTgzNDM5OGUzMDVjNTdiNjk3NjlmYjMzZGU5YjBmODZmYWU1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.wBXmDeKu-IDRPToFeDQeLXoPerKQ3gECO5DGfl9Xbro);
+}
+
+#keyart-8 {
+	background-image: url(https://private-user-images.githubusercontent.com/139842899/348459230-cae5b4cb-221d-4b40-b8ee-2c65b1b64099.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjA4NTg4NjgsIm5iZiI6MTcyMDg1ODU2OCwicGF0aCI6Ii8xMzk4NDI4OTkvMzQ4NDU5MjMwLWNhZTViNGNiLTIyMWQtNGI0MC1iOGVlLTJjNjViMWI2NDA5OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzEzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcxM1QwODE2MDhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZjk5NzNhNDM0OTVjOWQ3OWE3ZmRiYmQxZDVjMGUzNGY3MjJlZjE3ODlkMzZiYjRlNzJkNDhkYjYyNzA1OWI1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.PNbIsu1bjApU_NGRdlX6XJ999obJ2PqhI27s-pTtV1s);
+}
+
+#keyart-scrim {
+	opacity: 0;
+}
