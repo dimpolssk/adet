@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: url('https://i.pinimg.com/736x/0a/f9/33/0af9331e8c6b168d77aae1448f871bea.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+
+.profile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Optional: add a white overlay with opacity for better readability */
+    border-radius: 2px;
+}
+
+.profile .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgb(252, 231, 247); /* Optional: add a background to the navbar for better readability */
+    color: rgb(233, 145, 236);
+}
+
+.profile .navbar h1, .profile .navbar h2 {
+    margin: 0 10px;
+}
+
+.profile .icons {
+    display: flex;
+    align-items: center;
+}
+
+.profile .icons img {
+    margin-left: 10px; /* Adjust the spacing between the images */
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+.profile .linfo, .profile .rinfo {
+    padding: 20px;
+    color: black;
+}
+
+.profile .linfo img, .profile .rinfo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
