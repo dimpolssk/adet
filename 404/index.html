@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found</title>
+  <body>
+    <div class="o-404">
+      <h1 class="a-title">404</h1>
+      <p class="a-message">
+        You came to the wrong neighborhood
+      </p>
+      <div class="o-cat">
+        <div class="m-ears">
+          <div class="m-ear -right"></div>
+          <div class="m-ear -left"></div>
+        </div>
+        <div class="m-face">
+          <div class="m-eyes">
+            <div class="m-eye -left">
+              <div class="a-eye-pupil"></div>
+            </div>
+            <div class="m-eye -right">
+              <div class="a-eye-pupil"></div>
+            </div>
+          </div>
+          <div class="m-nose"></div>
+        </div>
+      </div>
+      <div id="track" class="track"></div> 
+    </div>
+  </body>
+  </html>
+  
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+  
+    :root {
+      --blur-strength: 8vmax;
+      --track-size: 18vmax;
+      --animation-duration: 10s;
+      --main-color: #fff;
+      --secondary-color: #000;
+    }
+  
+    .track {
+      width: var(--track-size);
+      height: var(--track-size);
+      background-color: rgba(245, 255, 198, 0.3);
+      position: absolute;
+      left: -50%;
+      top: -50%;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      filter: blur(50px);
+    }
+  
+    .blur {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      backdrop-filter: blur(var(--blur-strength));
+    }
+  
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg) scale(1);
+      }
+      50% {
+        transform: rotate(0deg) scale(1.3);
+      }
+      to {
+        transform: rotate(360deg) scale(1);
+      }
+    }
+  
+    /* General Styling */
+    html {
+      font-size: 16px;
+      font-family: "Shadows Into Light", cursive;
+    }
+  
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      background-color: var(--secondary-color);
+      color: var(--main-color);
+      overflow-y: scroll; /* Enable vertical scrolling */
+      scrollbar-width: thin; /* Thin scrollbar */
+      scrollbar-color: white black; /* Scrollbar color */
+    }
+  
+    .a-title {
+      font-size: 10rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    .a-message {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    /* Cat and Features */
+    .o-cat {
+      width: 35vh;
+      margin: auto;
+      padding: 3rem;
+    }
+  
+    .m-ear,
+    .m-eye {
+      background-color: var(--main-color);
+    }
+  
+    .m-ears {
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 1vh 0.5vh;
+      z-index: 1;
+    }
+  
+    .m-ear {
+      height: 14vh;
+      width: 10vh;
+      border-radius: 40% 70% 10% 10% / 100% 100% 10% 10%;
+      position: relative;
+    }
+  
+    .m-ear.-left {
+      transform: rotateZ(15deg);
+    }
+  
+    .m-ear.-right {
+      transform: rotateY(180deg) rotateZ(15deg);
+    }
+  
+    .m-ear:after,
+    .m-ear:before {
+      content: "";
+      position: absolute;
+      width: 2px;
+      background-color: var(--secondary-color);
+      bottom: 0;
+      right: 70%;
+      border-radius: 50%;
+    }
+  
+    .m-ear:after {
+      height: 40%;
+      transform: rotate(15deg);
+    }
+  
+    .m-ear:before {
+      height: 35%;
+      transform: rotate(-15deg);
+    }
+  
+    .m-face {
+      position: relative;
+      background-color: var(--secondary-color);
+      border-radius: 100% 100% 0 0;
+      margin: -8vh auto 0;
+      padding: 8vh 0 6vh;
+      width: 90%;
+    }
+  
+    .m-eyes {
+      display: flex;
+      justify-content: space-around;
+      overflow: hidden;
+    }
+  
+    .m-eye {
+      width: 10vh;
+      height: 8vh;
+      border-radius: 70%;
+      position: relative;
+    }
+  
+    .m-eye:before {
+      content: "";
+      position: absolute;
+      height: 50%;
+      left: -2vh;
+      right: -2vh;
+      background-color: var(--secondary-color);
+      border-radius: 0 0 35% 35%;
+      z-index: 2;
+      animation: eyes 5s ease infinite;
+    }
+  
+    .m-eye:after {
+      content: "";
+      width: 10%;
+      height: 15%;
+      border-radius: 50%;
+      background-color: var(--main-color);
+      position: absolute;
+      top: 40%;
+    }
+  
+    .m-eye.-left:after {
+      right: -5%;
+    }
+  
+    .m-eye.-right:after {
+      left: -5%;
+    }
+  
+    .a-eye-pupil {
+      background-color: var(--secondary-color);
+      width: 30%;
+      left: 35%;
+      position: absolute;
+      height: 50%;
+      border-radius: 50%;
+      top: 25%;
+    }
+  
+    .a-eye-pupil:after {
+      content: "";
+      background-color: var(--main-color);
+      width: 20%;
+      left: 20%;
+    }
+  
+    .m-nose {
+      border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+      background-color: var(--main-color);
+      width: 4vh;
+      height: 2vh;
+      margin: auto;
+    }
+  
+    @keyframes eyes {
+      0%,
+      5%,
+      100% {
+        height: 50%;
+      }
+      2% {
+        height: 110%;
+      }
+    }
+  
+    /* Scrollbar styling for Chrome, Edge, and Safari */
+    /* Thin scrollbar */
+    ::-webkit-scrollbar {
+      width: 16px;
+    }
+  
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: white;
+    }
+  
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background-color: black;
+      border-radius: 2px;
+      border: 3px solid white; /* Border around the scrollbar handle */
+    }
+  </style>
+  </head>
+
+<script>
+  const track = document.getElementById("track");
+  const duration = 1000; 
+
+  document.body.addEventListener("pointermove", ({ clientX, clientY }) => {
+    track.style.left = `${clientX}px`;
+    track.style.top = `${clientY}px`;
+    track.style.transitionDuration = `${duration}ms`;
+  });
+</script>
+
